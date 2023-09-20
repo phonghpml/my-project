@@ -1,0 +1,1 @@
+export const END_POINT_BE = import.meta.env.END_POINT_BE || 'http://localhost:2000'
