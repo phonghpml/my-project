@@ -1,12 +1,13 @@
 export default {
-  'petstore-file': {
-    input: './petstore.yaml',
+  petstore: {
     output: {
-      mode: 'tags-split',
-      target: 'petstore.ts',
-      schemas: 'model',
+      mode: 'single',
+      target: 'src/generated/mybe.ts',
       client: 'react-query',
+      mock: false,
     },
-
+    input: {
+      target: 'http://localhost:2000/api-yaml',
+    },
   },
 };
